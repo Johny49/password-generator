@@ -55,6 +55,19 @@ header {
   min-height: 100px;
 }
 
+.slide-container {
+  text-align: center;
+}
+
+#pw-range { 
+  margin: 20px 0;
+  width: 80%;
+}
+
+#pw-range:focus {
+  outline: none;
+}
+
 .card-footer {
   text-align: center;
 }

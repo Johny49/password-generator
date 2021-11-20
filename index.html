@@ -24,19 +24,21 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
-          <!-- slider to set password length -->
+          <!-- slider to set password length with value bubble-->
           <div class="slide-container">
-            <input type="range" name="pw-length" id="pw-length" min="8" max="128" value="12" class="slider" itemid="pw-length">
-            <label for="slider">12</label>
+            <input id="pw-range" type="range" name="pw-length" id="pw-length" 
+              min="8" max="128" value="12" step="1" 
+              class="slider" itemid="pw-length">
+            <output for="slider" onforminput="pw-length.valueAsNumber;"></output>
           </div>
           <!-- password character criteria inputs-->
-          <input type="checkbox" name="uppercase" id="uppercase">
+          <input type="checkbox" name="uppercase" id="uppercase" checked>
           <label for="uppercase">Uppercase</label>
-          <input type="checkbox" name="lowercase" id="lowercase">
+          <input type="checkbox" name="lowercase" id="lowercase" checked>
           <label for="lowercase">Lowercase</label>
-          <input type="checkbox" name="numbers" id="numbers">
+          <input type="checkbox" name="numbers" id="numbers" checked>
           <label for="numbers">Numbers</label>
-          <input type="checkbox" name="special-char" id="special-char">
+          <input type="checkbox" name="special-char" id="special-char" checked>
           <label for="special-char">Special Characters</label>
         </div>
         <div class="card-footer">
