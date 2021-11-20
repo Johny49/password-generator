@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var pwRange = document.querySelector("#pw-range");
+var copyBtn = document.querySelector("#copy-to-clipboard");
 
 function generatePassword() {
   // get value from pwLength slider input
@@ -40,6 +41,13 @@ function setCharacterArray() {
    }
 }
 
+// copies password to the clipboard
+function copyToClipboard() {
+  const pasteText = document.querySelector("#password").value;
+  navigator.clipboard.writeText(pasteText);
+  console.log(pasteText);
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -71,3 +79,6 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// Add event listener to copy-to-clipboard button
+copyBtn.addEventListener("click", copyToClipboard);
