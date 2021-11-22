@@ -101,11 +101,16 @@ header {
   text-align: center;
   display: flex;
   -ms-flex-align: center;
+  padding: 4px 0 0 8px;
 }
 
 #pw-range { 
   margin: 20px 4px;
-  width: 60%;
+  width: 70%;
+}
+
+.character-criteria {
+  padding-bottom: 12px;
 }
 
 .card-footer {
