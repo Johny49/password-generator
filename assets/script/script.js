@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var pwRange = document.querySelector("#pw-range");
 var copyBtn = document.querySelector("#copy-btn");
+var pwRange = document.querySelector("#pw-range");
 
 function generatePassword() {
   // get value from pwLength slider input
@@ -59,24 +59,9 @@ function writePassword() {
 }
 
 // // Get value for password length slider and add to slider as bubble
-
-// function setPwValue(range, pwValueBubble) {
-//   const value = pwRange.value;
-//   const min = pwRange.min;
-//   const max = pwRange.max;
-//   const newValue = Number(((value - min) * 100) / (max - min));
-//   pwValueBubble.innerhtml = value
-
-//   pwValueBubble.style.left = newValue = "%";
-// }
-
-// Add event listener to pw-length range input slider
-// pwRange.addEventListener("input", () => {
-//   pwValueBubble.innerhtml = rangel.value;
-// });
-// pwRange.addEventListener("input", () => {
-//   setPwValue(pwRange, pwValueBubble);
-// });
+function outputUpdate(vol) {
+   document.querySelector("#pw-length").value = vol;
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

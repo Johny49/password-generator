@@ -34,10 +34,10 @@
           </div>
           <!-- slider to set password length with value bubble-->
           <div class="slide-container">
-            <input id="pw-range" type="range" name="pw-length" id="pw-length" 
-              min="8" max="128" value="12" step="1" 
-              class="slider" itemid="pw-length">
-            <output for="slider" onforminput="pw-length.valueAsNumber;"></output>
+            <label id="range-lbl" for="pw-length">Password Length:</label>
+            <input id="pw-range" type="range" min="8" max="128" value="12" 
+              step="1" oninput="outputUpdate(value)">
+            <output id="pw-length" for="pw-range">12</output>
           </div>
           <!-- password character criteria inputs-->
           <input type="checkbox" name="uppercase" id="uppercase" checked>

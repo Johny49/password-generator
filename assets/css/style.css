@@ -21,7 +21,7 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 80%;
+  width: 100%;
 }
 
 header {
@@ -73,7 +73,7 @@ header {
 
 .copy-to-clipboard {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 /* tooltip for copy to clipboard with 0.5 sec delay */
@@ -99,15 +99,13 @@ header {
 
 .slide-container {
   text-align: center;
+  display: flex;
+  -ms-flex-align: center;
 }
 
 #pw-range { 
-  margin: 20px 0;
-  width: 80%;
-}
-
-#pw-range:focus {
-  outline: none;
+  margin: 20px 4px;
+  width: 60%;
 }
 
 .card-footer {
@@ -175,6 +173,10 @@ button[disabled] {
 }
 
 @media (max-width: 690px) {
+  #pw-length {
+    padding-right: 8px;
+  }
+
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
