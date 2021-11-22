@@ -11,7 +11,6 @@ function generatePassword() {
   
   for(var i = 0; i < pwLength; i++) {
     // pull random character from charSet and add to new string
-    //TODO: catch undefined if no characters selected
     const random = Math.random() * charSet.length; 
     const floored = Math.floor(random);
     pwStr += charSet[floored];
@@ -58,7 +57,7 @@ function writePassword() {
 
 }
 
-// // Get value for password length slider and add to slider as bubble
+// // Get value for password length slider and add to slider as output
 function outputUpdate(vol) {
    document.querySelector("#pw-length").value = vol;
 }
