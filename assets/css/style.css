@@ -55,6 +55,48 @@ header {
   min-height: 100px;
 }
 
+#copy-btn {
+  border-radius: 4px;
+  border: 1px solid rgb(2, 68, 22);
+}
+
+#copy-btn:hover {
+  background-color: rgb(2, 68, 22);
+  cursor: pointer;
+}
+#copy-img {
+  width: 28px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.copy-to-clipboard {
+  position: relative;
+  display: inline-block;
+}
+
+/* tooltip for copy to clipboard with 0.5 sec delay */
+.copy-to-clipboard .copy-tooltip {
+ visibility: hidden;
+ width: 110px;
+ background-color: darkgreen;
+ color: #e7e9eb;
+ text-align: center;
+ font-size: small;
+ padding: 8px;
+ border-radius: 4px;
+ position: absolute;
+ z-index: 1;
+ transition: ease-in-out;
+ transition-delay: 0.5s ;
+
+}
+
+.copy-to-clipboard:hover .copy-tooltip { 
+  visibility: visible;
+}
+
 .slide-container {
   text-align: center;
 }

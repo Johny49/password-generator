@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var pwRange = document.querySelector("#pw-range");
-var copyBtn = document.querySelector("#copy-to-clipboard");
+var copyBtn = document.querySelector("#copy-btn");
 
 function generatePassword() {
   // get value from pwLength slider input
@@ -11,7 +11,8 @@ function generatePassword() {
   
   for(var i = 0; i < pwLength; i++) {
     // pull random character from charSet and add to new string
-    const random = Math.random() * charSet.length;
+    //TODO: catch undefined if no characters selected
+    const random = Math.random() * charSet.length; 
     const floored = Math.floor(random);
     pwStr += charSet[floored];
   }
