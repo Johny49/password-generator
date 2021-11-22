@@ -18,11 +18,11 @@ Creates a random password of 8 to 128 characters with user-chosen character type
 
 
 ## Link
-[Password Generator Website](https://johny49.github.io/geoffrey-johnson-portfolio)
+[Password Generator Website](https://johny49.github.io/password-generator)
 
 
 ## Code
-[GitHub Code Repository](https://github.com/Johny49/geoffrey-johnson-portfolio)
+[GitHub Code Repository](https://github.com/Johny49/password-generator)
 
 
 ## Contact 
